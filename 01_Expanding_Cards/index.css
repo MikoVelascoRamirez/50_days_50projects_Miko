@@ -5,4 +5,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif;
+}}
+
+body{
+    display: flex;
+    align-items: center;
+    height: 100vh;
 }
+
