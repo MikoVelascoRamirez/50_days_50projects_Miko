@@ -73,14 +73,19 @@ body{
     margin-left: 25px;
     opacity: 0;
 }
-/* Cancelling card's effect */
-.no-effect{
-    animation-duration: 0;
+
+#container > .card > figcaption.appeared{
+    animation-name: appear;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
 }
 
-/* Card's effect */
-.with-effect{
-    animation-duration: 1.25s;
+#container > .card > figcaption.hided{
+    animation-name: hide;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
 /* Animations */
 @keyframes open {
     from { width: 7%; }
