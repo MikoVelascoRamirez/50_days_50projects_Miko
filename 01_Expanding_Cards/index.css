@@ -41,6 +41,17 @@ body{
     height: 100%;
     border-radius: 50px;
 }
+
+/* Cancelling card's effect */
+.no-effect{
+    animation-duration: 0;
+}
+
+/* Card's effect */
+.with-effect{
+    animation-duration: 1.25s;
+}
+
 #container > .card > figcaption {
     color: #fff;
     font-size: 25px;
@@ -49,3 +60,13 @@ body{
     margin-left: 25px;
     opacity: 0;
 }
+/* Cancelling card's effect */
+.no-effect{
+    animation-duration: 0;
+}
+
+/* Card's effect */
+.with-effect{
+    animation-duration: 1.25s;
+}
+
