@@ -26,3 +26,11 @@ body{
     width: 7%;
     /* border: 1px solid; */
 }
+
+#container .card:hover{
+    cursor: pointer;
+}
+
+#container .card:first-of-type{
+    width: 65%;
+}
