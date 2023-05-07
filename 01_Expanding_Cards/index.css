@@ -20,3 +20,9 @@ body{
     /* border: 1px solid; */
     padding: 50px 70px;
 }
+
+#container .card{
+    height: 80vh;
+    width: 7%;
+    /* border: 1px solid; */
+}
