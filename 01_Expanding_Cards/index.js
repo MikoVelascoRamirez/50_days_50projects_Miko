@@ -4,3 +4,9 @@ mainContainer.addEventListener('click', e => {
     const parentElementTagName = parentElement.localName;
     const figcaption = e.target.nextElementSibling;
 })
+
+function getElementOpen(){
+    const opened = document.querySelector('.opened');
+    const figcaption = opened.lastElementChild;
+
+}
