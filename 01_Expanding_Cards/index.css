@@ -81,5 +81,29 @@ body{
 /* Card's effect */
 .with-effect{
     animation-duration: 1.25s;
+/* Animations */
+@keyframes open {
+    from { width: 7%; }
+    to { width: calc(7% + 652.50px); } 
 }
 
+@keyframes swipped{
+    from { width: 65%; }
+    to { width: calc(65% - 652.50px); }
+}
+
+@keyframes appear{
+    from { opacity: 0; }
+    to { opacity: 1;  }
+}
+
+@keyframes hide{
+    from {
+        /* opacity: 1;  */
+        visibility: visible; 
+    }
+    to { 
+        /* opacity: 0; */
+        visibility: hidden; 
+    }
+}
