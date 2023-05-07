@@ -52,6 +52,19 @@ body{
     animation-duration: 1.25s;
 }
 
+#container .opened{
+    animation-name: open;
+    animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+    animation-fill-mode: forwards;
+}
+
+#container .swipped { 
+    width: 7%;
+    animation-name: swipped;
+    animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+    animation-fill-mode: forwards;
+}
+
 #container > .card > figcaption {
     color: #fff;
     font-size: 25px;
