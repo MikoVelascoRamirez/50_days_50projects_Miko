@@ -75,6 +75,16 @@ body{
     justify-content: space-evenly;
 }
 
+/* Styling section's buttons */
+.controls .btn{
+    width: 39%;
+    padding: 7px;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    text-align: center;
+}
+
 .inactive{
     background-color: rgba(189, 195, 199,0.5);
     cursor: not-allowed;
