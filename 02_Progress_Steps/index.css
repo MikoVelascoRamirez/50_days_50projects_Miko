@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif;
-}}
+}
 
 body{
     display: flex;
@@ -15,3 +15,5 @@ body{
     height: 100vh;
     background-color: rgba(220, 221, 225,0.2);
 }
+
+#container{ width: 350px; }
