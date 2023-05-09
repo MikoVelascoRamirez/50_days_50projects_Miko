@@ -17,3 +17,16 @@ body{
 }
 
 #container{ width: 350px; }
+
+.progressBar{
+    -webkit-appearance: progres-bar;
+    appearance: none;
+    width: 100%;
+    height: 4px;
+    vertical-align: top;
+}
+
+.progressBar[value]::-webkit-progress-bar{
+    background-color: #dcdde1;
+    border-radius: 50px;
+}
