@@ -30,3 +30,9 @@ body{
     background-color: #dcdde1;
     border-radius: 50px;
 }
+
+.progressBar[value]::-webkit-progress-value{
+    background-color: rgba(0, 151, 230,1.0);
+    border-radius: 50px;
+    transition: all 0.4s ease;
+}
