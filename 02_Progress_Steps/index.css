@@ -44,3 +44,14 @@ body{
     justify-content: space-between;
     margin-top: -35px;
 }
+
+.steps .step{
+    border-width: 3px;
+    border-style: solid;
+    background-color: #fff;
+    padding-block: 2px;
+    padding-inline: 8px;
+    border-radius: 50%;
+    text-align: center;
+    color: rgba(53, 59, 72,0.5);
+}
