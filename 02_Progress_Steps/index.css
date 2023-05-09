@@ -67,6 +67,14 @@ body{
     color: rgba(53, 59, 72,0.5);
 }
 
+/* Controls section */
+.controls{
+    width: 60%;
+    margin: 30px auto 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .inactive{
     background-color: rgba(189, 195, 199,0.5);
     cursor: not-allowed;
