@@ -66,3 +66,15 @@ body{
     text-align: center;
     color: rgba(53, 59, 72,0.5);
 }
+
+.inactive{
+    background-color: rgba(189, 195, 199,0.5);
+    cursor: not-allowed;
+    transition: all 0.4s ease;
+}
+
+.active{
+    background-color: rgba(0, 151, 230,1.0);
+    cursor: default;
+    transition: all 0.4s ease;
+}
