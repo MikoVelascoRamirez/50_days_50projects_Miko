@@ -9,17 +9,17 @@
 </head>
 <body>
     <div id="container">
-        <progress class="progressBar" value="0">
-            <div class="steps">
-                <label for="">1</label>
-                <label for="">2</label>
-                <label for="">3</label>
-                <label for="">4</label>
-            </div>
+        <progress class="progressBar" value="0" min="0" max="100">
         </progress>
+        <div class="steps">
+            <label class="step done">1</label>
+            <label class="step unfinished">2</label>
+            <label class="step unfinished">3</label>
+            <label class="step unfinished">4</label>
+        </div>
         <section class="controls">
-            <button>Prev</button>
-            <button>Next</button>
+            <button class="btn inactive" id="prev" disabled>Prev</button>
+            <button class="btn active" id="next">Next</button>
         </section>
     </div>
     <script src="index.js"></script>
