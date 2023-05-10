@@ -52,3 +52,8 @@ function manageButtonsState(){
         containerControls.children[0].disabled = true;
     }
 }
+
+function getNextStep(){
+    const steps = document.querySelector('.steps');
+    return steps.querySelector(':not(.done)');
+}
