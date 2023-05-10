@@ -27,4 +27,7 @@ containerControls.addEventListener('click', e => {
         getNextStep().classList.toggle('unfinished');
         getNextStep().classList.toggle('done');
     }
+
+    progressBar.value = progressBarState.progress;
+    manageButtonsState()
 });
