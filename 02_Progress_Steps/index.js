@@ -57,3 +57,9 @@ function getNextStep(){
     const steps = document.querySelector('.steps');
     return steps.querySelector(':not(.done)');
 }
+
+function getPreviousStep(){
+    const steps = document.querySelector('.steps');
+    const labelsDone = steps.querySelectorAll(':not(.unfinished)');
+    return [...labelsDone][labelsDone.length-1];
+}
