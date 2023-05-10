@@ -32,12 +32,21 @@ containerControls.addEventListener('click', e => {
     manageButtonsState()
 });
 
+function handleProgressState({buttonClicked, progress, actualStep}){
+    const stepsLbls = steps.children.length - 1;
+
+    if(buttonClicked === '') return {prog: progress, step: actualStep};
+
+    return buttonClicked === 'prev' 
+    ? { prog: progress - (100 / stepsLbls), step: actualStep - 1 } 
+    : { prog: progress + (100 / stepsLbls), step: actualStep + 1 }
+}
+
 function manageButtonsState(){
     if(progressBarState.progress > 0 && progressBarState.progress < 100 ){
         containerControls.children[0].classList.remove('inactive');
         containerControls.children[0].classList.add('active');
         containerControls.children[0].disabled = false;
-
 
         containerControls.children[1].classList.remove('inactive');
         containerControls.children[1].classList.add('active');
