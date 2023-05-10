@@ -4,7 +4,8 @@ const steps = document.querySelector('.steps');
 
 const progressBarState = {
     actualStep: 1,
-    progress : 0
+    progress : 0,
+    buttonClicked: ''
 }
 
 containerControls.addEventListener('click', e => {
