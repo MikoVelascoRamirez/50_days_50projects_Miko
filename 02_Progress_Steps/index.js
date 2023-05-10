@@ -10,23 +10,12 @@ const progressBarState = {
 
 containerControls.addEventListener('click', e => {
     const buttonClicked = e.target.id;
-    const stepsLbls = steps.children.length - 1;
+    progressBarState.buttonClicked = buttonClicked;
 
-    if(buttonClicked === 'prev'){
-        progressBarState.progress -= 100 / stepsLbls;
-        progressBarState.actualStep -= 1;
+    const { prog, step } = handleProgressState(progressBarState);
+    progressBarState.progress = prog;
+    progressBarState.actualStep = step;
 
-        getPreviousStep().classList.toggle('done');
-        getPreviousStep().classList.toggle('unfinished');
-
-    } else if(buttonClicked === 'next'){
-        progressBarState.progress += 100 / stepsLbls;
-        progressBarState.actualStep += 1;
-
-
-        getNextStep().classList.toggle('unfinished');
-        getNextStep().classList.toggle('done');
-    }
 
     progressBar.value = progressBarState.progress;
     manageButtonsState()
